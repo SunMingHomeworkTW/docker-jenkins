@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'gradlew bootRun'
+                sh 'gradle bootRun'
             }
         }
         stage('Test') {
             steps {
-                sh 'gradlew test'
+                sh 'gradle test'
             }
         }
 
